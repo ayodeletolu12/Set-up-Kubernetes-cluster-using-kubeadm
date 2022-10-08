@@ -84,8 +84,8 @@ kubectl apply -f https://docs.projectcalico.org/manifests/calico.yaml
 
 Then you can join any number of worker nodes by running the following on each as root:
 
-kubeadm join 10.4.0.4:6443 --token 2h6onu.z0l25krzuavpjguo \
-        --discovery-token-ca-cert-hash sha256:b6849889058fab47d08915f892bc955c520d32f15d361fef166947d0459be741
+kubeadm join 10.4.0.*:**** --token ************ \
+        --discovery-token-ca-cert-hash sha256:*********************************************
 
 If you lost the join command, use the below command to print it out
 kubeadm token create --print-join-command
